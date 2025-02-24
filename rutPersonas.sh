@@ -14,7 +14,7 @@ generate_rut() {
     for ((i = 0; i < ${#reverse_number}; i++)); do
         digit=${reverse_number:$i:1}
         sum=$((sum + digit * multiplier[i % ${#multiplier[@]}]))
-    e
+    done
 
     remainder=$((sum % 11))
     verifier=$((11 - remainder))
