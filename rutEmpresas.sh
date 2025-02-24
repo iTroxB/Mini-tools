@@ -30,7 +30,6 @@ generate_rut() {
 
 count=0
 while [ $count -lt 50 ]; do
-    echo "Creando RUTs chilenos $((count + 1))..."
     generate_rut
     ((count++))
 done
